@@ -364,7 +364,7 @@ export function InsuranceForm() {
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="grid grid-cols-2 gap-y-3 gap-x-8"
+          className="flex flex-col md:grid md:grid-cols-2 gap-3 md:gap-6 w-full max-w-xl"
         >
           {formFields?.map((formField) => {
             if (formField.type === "select" && formField.selectFieldOptions) {

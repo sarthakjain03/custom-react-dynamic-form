@@ -15,7 +15,7 @@ export default function RadioGroupField(props: FormFieldProps) {
             control={formControl}
             name={name as keyof FormFieldProps["validationSchema"]}
             render={({ field }) => (
-              <FormItem className="flex space-x-7 col-span-2 items-center">
+              <FormItem className="flex space-x-7 col-span-full items-center">
                 <FormLabel>{label}</FormLabel>
                 <FormControl>
                   <RadioGroup
