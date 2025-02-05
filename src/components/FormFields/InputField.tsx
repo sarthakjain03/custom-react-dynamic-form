@@ -18,7 +18,6 @@ export default function InputField(props: FormFieldProps) {
     name,
     placeholder,
     defaultValue,
-    inputWidth,
   } = props;
 
   return (
@@ -31,7 +30,7 @@ export default function InputField(props: FormFieldProps) {
           <FormControl>
             <Input
               className={cn(
-                `w-[${inputWidth ? inputWidth : "300px"}]`,
+                "w-full",
                 error && "border-red-500"
               )}
               placeholder={placeholder}

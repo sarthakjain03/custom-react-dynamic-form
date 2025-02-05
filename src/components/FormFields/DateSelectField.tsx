@@ -23,7 +23,7 @@ import {
 export default function DateSelectField(props: FormFieldProps) {
   const [popoverOpen, setPopoverOpen] = useState(false);
 
-  const { label, onChange, error, formControl, name, placeholder, inputWidth } = props;
+  const { label, onChange, error, formControl, name, placeholder } = props;
 
   return (
     <FormField
@@ -38,7 +38,7 @@ export default function DateSelectField(props: FormFieldProps) {
                 <Button
                   variant={"outline"}
                   className={cn(
-                    `w-[${inputWidth ? inputWidth : "300px"}] text-left font-normal`,
+                    "w-full text-left font-normal",
                     !field.value && "text-muted-foreground",
                     error && "border-red-500"
                   )}

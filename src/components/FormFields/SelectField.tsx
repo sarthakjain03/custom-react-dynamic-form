@@ -22,7 +22,6 @@ export default function SelectField(props: FormFieldProps) {
     formControl,
     selectFieldOptions,
     value,
-    inputWidth,
     name,
     placeholder,
     defaultValue,
@@ -46,7 +45,7 @@ export default function SelectField(props: FormFieldProps) {
             <FormControl>
               <SelectTrigger
                 className={cn(
-                  `w-[${inputWidth ? inputWidth : "300px"}]`,
+                  "w-full",
                   error && "border-red-500"
                 )}
               >
