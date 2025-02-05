@@ -8,7 +8,7 @@ import { FormFieldProps } from "@/types/formTypes";
 import { Input } from "../ui/input";
 
 export default function InputField(props: FormFieldProps) {
-  const { label, onChange, error, formControl, value, inputWidth, name, placeholder, defaultValue } = props;
+  const { label, onChange, error, formControl, value, name, placeholder, defaultValue, inputWidth } = props;
 
   return (
     <FormField
@@ -19,7 +19,7 @@ export default function InputField(props: FormFieldProps) {
           <FormLabel className="text-black">{label}</FormLabel>
           <FormControl>
             <Input
-              className={`w-[${inputWidth ?? "300px"}] ${
+              className={`w-[${inputWidth ? inputWidth : "300px"}] ${
                 error ? "border-red-500" : ""
               }`}
               placeholder={placeholder}

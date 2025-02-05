@@ -34,7 +34,7 @@ export default function SelectField(props: FormFieldProps) {
           >
             <FormControl>
               <SelectTrigger
-                className={`w-[${inputWidth ?? "300px"}] ${
+                className={`w-[${inputWidth ? inputWidth : "300px"}] ${
                   error ? "border-red-500" : ""
                 }`}
               >
