@@ -12,10 +12,21 @@ import {
   FormLabel,
 } from "@/components/ui/form";
 import { FormFieldProps } from "@/types/formTypes";
-
+import { cn } from "@/lib/utils";
 
 export default function SelectField(props: FormFieldProps) {
-  const { label, onChange, error, formControl, selectFieldOptions, value, inputWidth, name, placeholder, defaultValue } = props;
+  const {
+    label,
+    onChange,
+    error,
+    formControl,
+    selectFieldOptions,
+    value,
+    inputWidth,
+    name,
+    placeholder,
+    defaultValue,
+  } = props;
 
   return (
     <FormField
@@ -26,17 +37,18 @@ export default function SelectField(props: FormFieldProps) {
           <FormLabel className="text-black">{label}</FormLabel>
           <Select
             onValueChange={(value) => {
-                field.onChange(value);
-                onChange(value);
+              field.onChange(value);
+              onChange(value);
             }}
             defaultValue={defaultValue as string}
-            value={value ? value as string : ""}
+            value={value ? (value as string) : ""}
           >
             <FormControl>
               <SelectTrigger
-                className={`w-[${inputWidth ? inputWidth : "300px"}] ${
-                  error ? "border-red-500" : ""
-                }`}
+                className={cn(
+                  `w-[${inputWidth ? inputWidth : "300px"}]`,
+                  error && "border-red-500"
+                )}
               >
                 <SelectValue placeholder={placeholder} />
               </SelectTrigger>

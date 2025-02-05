@@ -6,9 +6,20 @@ import {
 } from "@/components/ui/form";
 import { FormFieldProps } from "@/types/formTypes";
 import { Input } from "../ui/input";
+import { cn } from "@/lib/utils";
 
 export default function InputField(props: FormFieldProps) {
-  const { label, onChange, error, formControl, value, name, placeholder, defaultValue, inputWidth } = props;
+  const {
+    label,
+    onChange,
+    error,
+    formControl,
+    value,
+    name,
+    placeholder,
+    defaultValue,
+    inputWidth,
+  } = props;
 
   return (
     <FormField
@@ -19,14 +30,17 @@ export default function InputField(props: FormFieldProps) {
           <FormLabel className="text-black">{label}</FormLabel>
           <FormControl>
             <Input
-              className={`w-[${inputWidth ? inputWidth : "300px"}] ${
-                error ? "border-red-500" : ""
-              }`}
+              className={cn(
+                `w-[${inputWidth ? inputWidth : "300px"}]`,
+                error && "border-red-500"
+              )}
               placeholder={placeholder}
               defaultValue={defaultValue as string}
-              value={value ? value as string : ""}
+              value={value ? (value as string) : ""}
               onChange={(event) => {
-                field.onChange(event.target.value === "" ? undefined : event.target.value);
+                field.onChange(
+                  event.target.value === "" ? undefined : event.target.value
+                );
                 onChange(event.target.value);
               }}
             />
