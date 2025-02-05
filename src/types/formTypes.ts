@@ -19,7 +19,6 @@ export interface FormFieldProps {
   value: string | undefined | number | Date;
   onChange: (value?: string | Date) => void;
   error?: boolean;
-  inputWidth?: string;
   selectFieldOptions?: SelectFieldOptions;
   radioFieldOptions?: RadioFieldProps[];
 }

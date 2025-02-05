@@ -75,7 +75,6 @@ export function InsuranceForm() {
           ];
         });
       },
-      inputWidth: "300px",
       defaultValue: undefined,
       formControl: form.control,
       validationSchema: InsuranceFormSchema,
@@ -118,7 +117,6 @@ export function InsuranceForm() {
           ];
         });
       },
-      inputWidth: "300px",
       defaultValue: undefined,
       formControl: form.control,
       validationSchema: InsuranceFormSchema,
@@ -153,7 +151,6 @@ export function InsuranceForm() {
           ];
         });
       },
-      inputWidth: "300px",
       defaultValue: undefined,
       formControl: form.control,
       validationSchema: InsuranceFormSchema,
@@ -177,7 +174,6 @@ export function InsuranceForm() {
           ];
         });
       },
-      inputWidth: "300px",
       defaultValue: undefined,
       formControl: form.control,
       validationSchema: InsuranceFormSchema,
@@ -201,7 +197,6 @@ export function InsuranceForm() {
           ];
         });
       },
-      inputWidth: "300px",
       defaultValue: 2025,
       formControl: form.control,
       validationSchema: InsuranceFormSchema,
@@ -225,7 +220,6 @@ export function InsuranceForm() {
           ];
         });
       },
-      inputWidth: "300px",
       defaultValue: undefined,
       formControl: form.control,
       validationSchema: InsuranceFormSchema,
@@ -249,7 +243,6 @@ export function InsuranceForm() {
           ];
         });
       },
-      inputWidth: "300px",
       defaultValue: undefined,
       formControl: form.control,
       validationSchema: InsuranceFormSchema,
@@ -286,7 +279,6 @@ export function InsuranceForm() {
           ];
         });
       },
-      inputWidth: "300px",
       defaultValue: "January",
       formControl: form.control,
       validationSchema: InsuranceFormSchema,
@@ -309,7 +301,6 @@ export function InsuranceForm() {
           ];
         });
       },
-      inputWidth: "300px",
       defaultValue: undefined,
       formControl: form.control,
       validationSchema: InsuranceFormSchema,
@@ -332,7 +323,6 @@ export function InsuranceForm() {
           ];
         });
       },
-      inputWidth: "300px",
       defaultValue: undefined,
       formControl: form.control,
       validationSchema: InsuranceFormSchema,
@@ -358,7 +348,6 @@ export function InsuranceForm() {
           ];
         });
       },
-      inputWidth: "300px",
       defaultValue: "Two Wheeler",
       formControl: form.control,
       validationSchema: InsuranceFormSchema,
